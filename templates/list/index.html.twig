@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Liste des sujets
+{% endblock %}
+
+{% block body %}
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card bg-light mb-3 mt-3">
+					<div class="card-body">
+						<div class="card-header">Liste des sujets du forum</div>
+						<table class="table">
+							<tr>
+								<th>Sujets</th>
+							</tr>
+							{% for item in sujets %}
+								<tr>
+									<td>{{ item }}</td>
+								</tr>
+							{% endfor %}
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}
