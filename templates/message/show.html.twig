@@ -5,21 +5,27 @@
 			<div
 				class="col-md-12 d-flex justify-content-around flex-wrap">
 				{# boucle sur le tableau $articles du controller#}
-				{% for key, item in messages %}
-					<div class="card" style="width: 450px; margin-top: 50px">
-						<div class="card-header">
-							Créé le
-							{{ item.getDate|date("d/m/Y") }} par {{ item.getIdUser.name }}
-						</div>
-						<div class="card-body">
-							<h5 class="card-title">{{ item.getContenu }}</h5>
-						</div>
-					</div>
-				{% endfor %}
+				<ul>
+					{% for key, item in messages %}
+						<li style="list-style-type:none">
+							<div class="card" style="width: 450px; margin-top: 50px">
+								<div class="card-header">
+									Créé le {{ item.getDate|date("d/m/Y") }}
+									par {{ item.getIdUser.name }}
+								</div>
+								<div class="card-body">
+									<h5 class="card-title">{{ item.getContenu }}</h5>
+								</div>
+							</div>
+						</li>
+					{% endfor %}
+				</ul>
 			</div>
 		</div>
-        <div class="row">
-			<a href="{{ path('form_message',{ idSujet }) }}" class="btn btn-primary">Nouveau message</a>
+		<div class="row">
+			<div class="col-md-12 d-flex justify-content-center" style="margin-top:15px">
+				<a href="{{ path('form_message',{ idSujet }) }}" class="btn btn-primary">Nouveau message</a>
+			</div>
 		</div>
 	</div>
 {% endblock %}

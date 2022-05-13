@@ -71,41 +71,49 @@ class __TwigTemplate_5b8acfbf8451e8a230029a54ce4b7242 extends Template
 \t\t\t\tclass=\"col-md-12 d-flex justify-content-around flex-wrap\">
 \t\t\t\t";
         // line 8
-        echo "\t\t\t\t";
+        echo "\t\t\t\t<ul>
+\t\t\t\t\t";
+        // line 9
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["messages"]) || array_key_exists("messages", $context) ? $context["messages"] : (function () { throw new RuntimeError('Variable "messages" does not exist.', 8, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["messages"]) || array_key_exists("messages", $context) ? $context["messages"] : (function () { throw new RuntimeError('Variable "messages" does not exist.', 9, $this->source); })()));
         foreach ($context['_seq'] as $context["key"] => $context["item"]) {
-            // line 9
-            echo "\t\t\t\t\t<div class=\"card\" style=\"width: 450px; margin-top: 50px\">
-\t\t\t\t\t\t<div class=\"card-header\">
-\t\t\t\t\t\t\tCréé le
-\t\t\t\t\t\t\t";
-            // line 12
-            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "getDate", [], "any", false, false, false, 12), "d/m/Y"), "html", null, true);
-            echo " par ";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["item"], "getIdUser", [], "any", false, false, false, 12), "name", [], "any", false, false, false, 12), "html", null, true);
+            // line 10
+            echo "\t\t\t\t\t\t<li style=\"list-style-type:none\">
+\t\t\t\t\t\t\t<div class=\"card\" style=\"width: 450px; margin-top: 50px\">
+\t\t\t\t\t\t\t\t<div class=\"card-header\">
+\t\t\t\t\t\t\t\t\tCréé le ";
+            // line 13
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "getDate", [], "any", false, false, false, 13), "d/m/Y"), "html", null, true);
             echo "
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t<div class=\"card-body\">
-\t\t\t\t\t\t\t<h5 class=\"card-title\">";
-            // line 15
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "getContenu", [], "any", false, false, false, 15), "html", null, true);
+\t\t\t\t\t\t\t\t\tpar ";
+            // line 14
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["item"], "getIdUser", [], "any", false, false, false, 14), "name", [], "any", false, false, false, 14), "html", null, true);
+            echo "
+\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t<div class=\"card-body\">
+\t\t\t\t\t\t\t\t\t<h5 class=\"card-title\">";
+            // line 17
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "getContenu", [], "any", false, false, false, 17), "html", null, true);
             echo "</h5>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t</div>
-\t\t\t\t";
+\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t</li>
+\t\t\t\t\t";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['key'], $context['item'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 19
-        echo "\t\t\t</div>
-\t\t</div>
-        <div class=\"row\">
-\t\t\t<a href=\"";
         // line 22
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("form_message", ["idSujet" => (isset($context["idSujet"]) || array_key_exists("idSujet", $context) ? $context["idSujet"] : (function () { throw new RuntimeError('Variable "idSujet" does not exist.', 22, $this->source); })())]), "html", null, true);
+        echo "\t\t\t\t</ul>
+\t\t\t</div>
+\t\t</div>
+\t\t<div class=\"row\">
+\t\t\t<div class=\"col-md-12 d-flex justify-content-center\" style=\"margin-top:15px\">
+\t\t\t\t<a href=\"";
+        // line 27
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("form_message", ["idSujet" => (isset($context["idSujet"]) || array_key_exists("idSujet", $context) ? $context["idSujet"] : (function () { throw new RuntimeError('Variable "idSujet" does not exist.', 27, $this->source); })())]), "html", null, true);
         echo "\" class=\"btn btn-primary\">Nouveau message</a>
+\t\t\t</div>
 \t\t</div>
 \t</div>
 ";
@@ -129,7 +137,7 @@ class __TwigTemplate_5b8acfbf8451e8a230029a54ce4b7242 extends Template
 
     public function getDebugInfo()
     {
-        return array (  107 => 22,  102 => 19,  92 => 15,  84 => 12,  79 => 9,  74 => 8,  68 => 3,  58 => 2,  35 => 1,);
+        return array (  114 => 27,  107 => 22,  96 => 17,  90 => 14,  86 => 13,  81 => 10,  77 => 9,  74 => 8,  68 => 3,  58 => 2,  35 => 1,);
     }
 
     public function getSourceContext()
@@ -141,21 +149,27 @@ class __TwigTemplate_5b8acfbf8451e8a230029a54ce4b7242 extends Template
 \t\t\t<div
 \t\t\t\tclass=\"col-md-12 d-flex justify-content-around flex-wrap\">
 \t\t\t\t{# boucle sur le tableau \$articles du controller#}
-\t\t\t\t{% for key, item in messages %}
-\t\t\t\t\t<div class=\"card\" style=\"width: 450px; margin-top: 50px\">
-\t\t\t\t\t\t<div class=\"card-header\">
-\t\t\t\t\t\t\tCréé le
-\t\t\t\t\t\t\t{{ item.getDate|date(\"d/m/Y\") }} par {{ item.getIdUser.name }}
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t<div class=\"card-body\">
-\t\t\t\t\t\t\t<h5 class=\"card-title\">{{ item.getContenu }}</h5>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t</div>
-\t\t\t\t{% endfor %}
+\t\t\t\t<ul>
+\t\t\t\t\t{% for key, item in messages %}
+\t\t\t\t\t\t<li style=\"list-style-type:none\">
+\t\t\t\t\t\t\t<div class=\"card\" style=\"width: 450px; margin-top: 50px\">
+\t\t\t\t\t\t\t\t<div class=\"card-header\">
+\t\t\t\t\t\t\t\t\tCréé le {{ item.getDate|date(\"d/m/Y\") }}
+\t\t\t\t\t\t\t\t\tpar {{ item.getIdUser.name }}
+\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t<div class=\"card-body\">
+\t\t\t\t\t\t\t\t\t<h5 class=\"card-title\">{{ item.getContenu }}</h5>
+\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t</li>
+\t\t\t\t\t{% endfor %}
+\t\t\t\t</ul>
 \t\t\t</div>
 \t\t</div>
-        <div class=\"row\">
-\t\t\t<a href=\"{{ path('form_message',{ idSujet }) }}\" class=\"btn btn-primary\">Nouveau message</a>
+\t\t<div class=\"row\">
+\t\t\t<div class=\"col-md-12 d-flex justify-content-center\" style=\"margin-top:15px\">
+\t\t\t\t<a href=\"{{ path('form_message',{ idSujet }) }}\" class=\"btn btn-primary\">Nouveau message</a>
+\t\t\t</div>
 \t\t</div>
 \t</div>
 {% endblock %}
