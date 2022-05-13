@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class ListController extends AbstractController
 {
-    #[Route('/sujets', name: 'app_sujets')]
+    #[Route('/list', name: 'app_sujets')]
     public function index(): Response
     {
         $sujets = [

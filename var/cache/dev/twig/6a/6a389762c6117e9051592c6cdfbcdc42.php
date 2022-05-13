@@ -93,47 +93,8 @@ class __TwigTemplate_c546dedda089dabfce48bd6e27bdc26d extends Template
 \t\t\t\t\t<div class=\"card-body\">
 \t\t\t\t\t\t<div class=\"card-header mb-3\">Formulaire d'inscription</div> ";
         // line 11
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 11, $this->source); })()), 'form_start');
-        echo "
-\t\t\t\t\t\t<div class=\"form_group\">
-\t\t\t\t\t\t\t<div class=\"col-md-12 mb-3\"> ";
-        // line 13
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 13, $this->source); })()), "name", [], "any", false, false, false, 13), 'row', ["attr" => ["class" => "form-control"]]);
-        echo "
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t<div class=\"form_group\">
-\t\t\t\t\t\t\t<div class=\"col-md-12 mb-3\"> ";
-        // line 17
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 17, $this->source); })()), "email", [], "any", false, false, false, 17), 'row', ["attr" => ["class" => "form-control"]]);
-        echo "
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t<div class=\"form_group\">
-\t\t\t\t\t\t\t<div class=\"col-md-12 mb-3\"> ";
-        // line 21
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 21, $this->source); })()), "password", [], "any", false, false, false, 21), "first", [], "any", false, false, false, 21), 'row', ["attr" => ["class" => "form-control"]]);
-        echo "
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t<div class=\"form_group\">
-\t\t\t\t\t\t\t<div class=\"col-md-12 mb-3\"> ";
-        // line 25
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 25, $this->source); })()), "password", [], "any", false, false, false, 25), "second", [], "any", false, false, false, 25), 'row', ["attr" => ["class" => "form-control"]]);
-        echo "
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t<div class=\"form-group\">
-\t\t\t\t\t\t\t<div class=\"col-md-8 col-md-offset-4\" style=\"margin-top:5px;\">
-\t\t\t\t\t\t\t\t<button type=\"submit\" class=\"btn btn-primary\">
-\t\t\t\t\t\t\t\t\t<i class=\"fa fa-btn fa-user\"></i>
-\t\t\t\t\t\t\t\t\tInscrivez vous
-\t\t\t\t\t\t\t\t</button>
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t</div> ";
-        // line 35
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 35, $this->source); })()), 'form_end');
-        echo "
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 11, $this->source); })()), 'form');
+        echo ".
 \t\t\t\t\t</div>
 \t\t\t\t</div>
 \t\t\t</div>
@@ -160,7 +121,7 @@ class __TwigTemplate_c546dedda089dabfce48bd6e27bdc26d extends Template
 
     public function getDebugInfo()
     {
-        return array (  135 => 35,  122 => 25,  115 => 21,  108 => 17,  101 => 13,  96 => 11,  89 => 6,  79 => 5,  59 => 3,  36 => 2,);
+        return array (  96 => 11,  89 => 6,  79 => 5,  59 => 3,  36 => 2,);
     }
 
     public function getSourceContext()
@@ -175,37 +136,13 @@ class __TwigTemplate_c546dedda089dabfce48bd6e27bdc26d extends Template
 \t\t\t<div class=\"col-md-10 ml-md-auto\">
 \t\t\t\t<div class=\"card bg-light mb-3 mt-5\" style=\"width: 800px\">
 \t\t\t\t\t<div class=\"card-body\">
-\t\t\t\t\t\t<div class=\"card-header mb-3\">Formulaire d'inscription</div> {{ form_start(form) }}
-\t\t\t\t\t\t<div class=\"form_group\">
-\t\t\t\t\t\t\t<div class=\"col-md-12 mb-3\"> {{ form_row(form.name, {'attr': {'class': 'form-control'}}) }}
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t<div class=\"form_group\">
-\t\t\t\t\t\t\t<div class=\"col-md-12 mb-3\"> {{ form_row(form.email, {'attr': {'class': 'form-control'}}) }}
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t<div class=\"form_group\">
-\t\t\t\t\t\t\t<div class=\"col-md-12 mb-3\"> {{ form_row(form.password.first, {'attr': {'class':'form-control'}}) }}
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t<div class=\"form_group\">
-\t\t\t\t\t\t\t<div class=\"col-md-12 mb-3\"> {{ form_row(form.password.second, {'attr': {'class':'form-control'}}) }}
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t<div class=\"form-group\">
-\t\t\t\t\t\t\t<div class=\"col-md-8 col-md-offset-4\" style=\"margin-top:5px;\">
-\t\t\t\t\t\t\t\t<button type=\"submit\" class=\"btn btn-primary\">
-\t\t\t\t\t\t\t\t\t<i class=\"fa fa-btn fa-user\"></i>
-\t\t\t\t\t\t\t\t\tInscrivez vous
-\t\t\t\t\t\t\t\t</button>
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t</div> {{ form_end(form) }}
+\t\t\t\t\t\t<div class=\"card-header mb-3\">Formulaire d'inscription</div> {{ form(form) }}.
 \t\t\t\t\t</div>
 \t\t\t\t</div>
 \t\t\t</div>
 \t\t</div>
 \t</div>
 {% endblock %}
-", "registration/index.html.twig", "C:\\Users\\Julien\\Documents\\Symfony\\forum\\templates\\registration\\index.html.twig");
+", "registration/index.html.twig", "C:\\Users\\Julien BARON\\Documents\\forum_symfony\\templates\\registration\\index.html.twig");
     }
 }

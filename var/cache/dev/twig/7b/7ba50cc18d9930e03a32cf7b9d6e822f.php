@@ -65,7 +65,7 @@ class __TwigTemplate_ecbe84abe6de6f3368d465d63a922b90 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Log in!
+        echo "Connexion
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -97,9 +97,7 @@ class __TwigTemplate_ecbe84abe6de6f3368d465d63a922b90 extends Template
         // line 13
         if ((isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 13, $this->source); })())) {
             // line 14
-            echo "\t\t\t\t\t\t\t\t\t<div class=\"alert alert-danger\"> ";
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(twig_get_attribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 14, $this->source); })()), "messageKey", [], "any", false, false, false, 14), twig_get_attribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 14, $this->source); })()), "messageData", [], "any", false, false, false, 14), "security"), "html", null, true);
-            echo "
+            echo "\t\t\t\t\t\t\t\t\t<div class=\"alert alert-danger\">Identifiants incorrects!
 \t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t";
         }
@@ -108,21 +106,21 @@ class __TwigTemplate_ecbe84abe6de6f3368d465d63a922b90 extends Template
         if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 17, $this->source); })()), "user", [], "any", false, false, false, 17)) {
             // line 18
             echo "\t\t\t\t\t\t\t\t\t<div class=\"mb-3\">
-\t\t\t\t\t\t\t\t\t\tYou are logged in as ";
+\t\t\t\t\t\t\t\t\t\tVous êtes connectés en tant que ";
             // line 19
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 19, $this->source); })()), "user", [], "any", false, false, false, 19), "username", [], "any", false, false, false, 19), "html", null, true);
             echo ",
 \t\t\t\t\t\t\t\t\t\t<a href=\"";
             // line 20
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
-            echo "\">Logout</a>
+            echo "\">Déconnexion</a>
 \t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t";
         }
         // line 23
-        echo "\t\t\t\t\t\t\t\t<div class=\"card-header mb-3\">Please sign in</div>
+        echo "\t\t\t\t\t\t\t\t<div class=\"card-header mb-3\">Connectez vous svp</div>
 \t\t\t\t\t\t\t\t<div class=\"form-group\">
-\t\t\t\t\t\t\t\t\t<label for=\"email\" class=\"col-md-4 control-label\">E-Mail Address</label>
+\t\t\t\t\t\t\t\t\t<label for=\"email\" class=\"col-md-4 control-label\">E-Mail</label>
 \t\t\t\t\t\t\t\t\t<div class=\"col-md-12\">
 \t\t\t\t\t\t\t\t\t\t<input id=\"inputEmail\" type=\"email\" class=\"form-control\" name=\"email\" value=\"";
         // line 27
@@ -131,7 +129,7 @@ class __TwigTemplate_ecbe84abe6de6f3368d465d63a922b90 extends Template
 \t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t<div class=\"form-group\">
-\t\t\t\t\t\t\t\t\t<label for=\"password\" class=\"col-md-4 control-label\">Password</label>
+\t\t\t\t\t\t\t\t\t<label for=\"password\" class=\"col-md-4 control-label\">Mot de passe</label>
 \t\t\t\t\t\t\t\t\t<div class=\"col-md-12\">
 \t\t\t\t\t\t\t\t\t\t<input id=\"inputPassword\" type=\"password\" class=\"form-control\" name=\"password\" required/>
 \t\t\t\t\t\t\t\t\t</div>
@@ -144,7 +142,7 @@ class __TwigTemplate_ecbe84abe6de6f3368d465d63a922b90 extends Template
 \t\t\t\t\t\t\t\t\t<div class=\"col-md-12\">
 \t\t\t\t\t\t\t\t\t\t<button type=\"submit\" class=\"btn btn-primary\">
 \t\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-btn fa-sign-in\"></i>
-\t\t\t\t\t\t\t\t\t\t\tLogin
+\t\t\t\t\t\t\t\t\t\t\tConnexion
 \t\t\t\t\t\t\t\t\t\t</button>
 \t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t</div>
@@ -176,14 +174,14 @@ class __TwigTemplate_ecbe84abe6de6f3368d465d63a922b90 extends Template
 
     public function getDebugInfo()
     {
-        return array (  141 => 36,  129 => 27,  123 => 23,  117 => 20,  113 => 19,  110 => 18,  107 => 17,  100 => 14,  98 => 13,  89 => 6,  79 => 5,  59 => 3,  36 => 2,);
+        return array (  139 => 36,  127 => 27,  121 => 23,  115 => 20,  111 => 19,  108 => 18,  105 => 17,  100 => 14,  98 => 13,  89 => 6,  79 => 5,  59 => 3,  36 => 2,);
     }
 
     public function getSourceContext()
     {
         return new Source("{# templates/security/login.html.twig #}
 {% extends 'base.html.twig' %}
-{% block title %}Log in!
+{% block title %}Connexion
 {% endblock %}
 {% block body %}
 \t<div class=\"container\">
@@ -194,24 +192,24 @@ class __TwigTemplate_ecbe84abe6de6f3368d465d63a922b90 extends Template
 \t\t\t\t\t\t<div class=\"card-body\">
 \t\t\t\t\t\t\t<form class=\"form-horizontal\" role=\"form\" method=\"post\">
 \t\t\t\t\t\t\t\t{% if error %}
-\t\t\t\t\t\t\t\t\t<div class=\"alert alert-danger\"> {{ error.messageKey|trans(error.messageData, 'security') }}
+\t\t\t\t\t\t\t\t\t<div class=\"alert alert-danger\">Identifiants incorrects!
 \t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t{% endif %}
 \t\t\t\t\t\t\t\t{% if app.user %}
 \t\t\t\t\t\t\t\t\t<div class=\"mb-3\">
-\t\t\t\t\t\t\t\t\t\tYou are logged in as {{ app.user.username }},
-\t\t\t\t\t\t\t\t\t\t<a href=\"{{ path('app_logout') }}\">Logout</a>
+\t\t\t\t\t\t\t\t\t\tVous êtes connectés en tant que {{ app.user.username }},
+\t\t\t\t\t\t\t\t\t\t<a href=\"{{ path('app_logout') }}\">Déconnexion</a>
 \t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t{% endif %}
-\t\t\t\t\t\t\t\t<div class=\"card-header mb-3\">Please sign in</div>
+\t\t\t\t\t\t\t\t<div class=\"card-header mb-3\">Connectez vous svp</div>
 \t\t\t\t\t\t\t\t<div class=\"form-group\">
-\t\t\t\t\t\t\t\t\t<label for=\"email\" class=\"col-md-4 control-label\">E-Mail Address</label>
+\t\t\t\t\t\t\t\t\t<label for=\"email\" class=\"col-md-4 control-label\">E-Mail</label>
 \t\t\t\t\t\t\t\t\t<div class=\"col-md-12\">
 \t\t\t\t\t\t\t\t\t\t<input id=\"inputEmail\" type=\"email\" class=\"form-control\" name=\"email\" value=\"{{ last_username }}\" required autofocus/>
 \t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t<div class=\"form-group\">
-\t\t\t\t\t\t\t\t\t<label for=\"password\" class=\"col-md-4 control-label\">Password</label>
+\t\t\t\t\t\t\t\t\t<label for=\"password\" class=\"col-md-4 control-label\">Mot de passe</label>
 \t\t\t\t\t\t\t\t\t<div class=\"col-md-12\">
 \t\t\t\t\t\t\t\t\t\t<input id=\"inputPassword\" type=\"password\" class=\"form-control\" name=\"password\" required/>
 \t\t\t\t\t\t\t\t\t</div>
@@ -221,7 +219,7 @@ class __TwigTemplate_ecbe84abe6de6f3368d465d63a922b90 extends Template
 \t\t\t\t\t\t\t\t\t<div class=\"col-md-12\">
 \t\t\t\t\t\t\t\t\t\t<button type=\"submit\" class=\"btn btn-primary\">
 \t\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-btn fa-sign-in\"></i>
-\t\t\t\t\t\t\t\t\t\t\tLogin
+\t\t\t\t\t\t\t\t\t\t\tConnexion
 \t\t\t\t\t\t\t\t\t\t</button>
 \t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t</div>
@@ -233,6 +231,6 @@ class __TwigTemplate_ecbe84abe6de6f3368d465d63a922b90 extends Template
 \t\t</div>
 \t</div>
 {% endblock %}
-", "security/login.html.twig", "C:\\Users\\Julien\\Documents\\Symfony\\forum\\templates\\security\\login.html.twig");
+", "security/login.html.twig", "C:\\Users\\Julien BARON\\Documents\\forum_symfony\\templates\\security\\login.html.twig");
     }
 }

@@ -61,12 +61,12 @@ class __TwigTemplate_e63116e218abd38965aec8158483ee3b extends Template
         // line 13
         echo "\t\t";
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 15
+        // line 16
         echo "
 \t\t";
-        // line 16
+        // line 17
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 18
+        // line 20
         echo "\t</head>
 \t<body>
 \t\t<nav class=\"navbar navbar-expand-lg navbar-light bg-light\" style=\"height:70px;\">
@@ -74,48 +74,54 @@ class __TwigTemplate_e63116e218abd38965aec8158483ee3b extends Template
 \t\t\t<div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\"></div>
 \t\t\t<ul class=\"nav navbar-nav navbar-right d-flex\">
 \t\t\t\t";
-        // line 24
-        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 24, $this->source); })()), "user", [], "any", false, false, false, 24)) {
-            // line 25
+        // line 26
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 26, $this->source); })()), "user", [], "any", false, false, false, 26)) {
+            // line 27
             echo "\t\t\t\t\t<li>
 \t\t\t\t\t\t<a class=\"nav-link\" href=\"";
-            // line 26
+            // line 28
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_sujets");
             echo "\">Liste des sujets</a>
 \t\t\t\t\t</li>
 \t\t\t\t\t<li>
 \t\t\t\t\t\t<a class=\"nav-link\" href=\"";
-            // line 29
+            // line 31
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("new_sujet");
+            echo "\">Ecrire un nouveau sujet</a>
+\t\t\t\t\t</li>
+\t\t\t\t\t<li>
+\t\t\t\t\t\t<a class=\"nav-link\" href=\"";
+            // line 34
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
             echo "\">Déconnexion</a>
 \t\t\t\t\t</li>
 \t\t\t\t";
         }
-        // line 32
+        // line 37
         echo "\t\t\t\t";
-        if ( !twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 32, $this->source); })()), "user", [], "any", false, false, false, 32)) {
-            // line 33
+        if ( !twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 37, $this->source); })()), "user", [], "any", false, false, false, 37)) {
+            // line 38
             echo "\t\t\t\t\t<li>
 \t\t\t\t\t\t<a class=\"nav-link\" href=\"";
-            // line 34
+            // line 39
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
             echo "\">Connexion</a>
 \t\t\t\t\t</li>
 \t\t\t\t\t<li>
 \t\t\t\t\t\t<a class=\"nav-link\" href=\"";
-            // line 37
+            // line 42
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_inscription");
             echo "\">Inscription</a>
 \t\t\t\t\t</li>
 \t\t\t\t";
         }
-        // line 40
+        // line 45
         echo "\t\t\t</ul>
 \t\t</nav>
 \t\t";
-        // line 42
+        // line 47
         $this->displayBlock('body', $context, $blocks);
-        // line 43
+        // line 48
         echo "\t</body>
 </html>
 ";
@@ -157,7 +163,8 @@ class __TwigTemplate_e63116e218abd38965aec8158483ee3b extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
 
-        echo " ";
+        // line 14
+        echo "\t\t\t";
         echo twig_escape_filter($this->env, call_user_func_array($this->env->getFunction('encore_entry_link_tags')->getCallable(), ["app"]), "html", null, true);
         echo "
 \t\t";
@@ -169,7 +176,7 @@ class __TwigTemplate_e63116e218abd38965aec8158483ee3b extends Template
 
     }
 
-    // line 16
+    // line 17
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -179,7 +186,8 @@ class __TwigTemplate_e63116e218abd38965aec8158483ee3b extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        echo " ";
+        // line 18
+        echo "\t\t\t";
         echo twig_escape_filter($this->env, call_user_func_array($this->env->getFunction('encore_entry_script_tags')->getCallable(), ["app"]), "html", null, true);
         echo "
 \t\t";
@@ -191,7 +199,7 @@ class __TwigTemplate_e63116e218abd38965aec8158483ee3b extends Template
 
     }
 
-    // line 42
+    // line 47
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -221,7 +229,7 @@ class __TwigTemplate_e63116e218abd38965aec8158483ee3b extends Template
 
     public function getDebugInfo()
     {
-        return array (  195 => 42,  173 => 16,  151 => 13,  131 => 6,  119 => 43,  117 => 42,  113 => 40,  107 => 37,  101 => 34,  98 => 33,  95 => 32,  89 => 29,  83 => 26,  80 => 25,  78 => 24,  70 => 18,  68 => 16,  65 => 15,  62 => 13,  56 => 8,  54 => 6,  47 => 1,);
+        return array (  203 => 47,  190 => 18,  180 => 17,  167 => 14,  157 => 13,  137 => 6,  125 => 48,  123 => 47,  119 => 45,  113 => 42,  107 => 39,  104 => 38,  101 => 37,  95 => 34,  89 => 31,  83 => 28,  80 => 27,  78 => 26,  70 => 20,  68 => 17,  65 => 16,  62 => 13,  56 => 8,  54 => 6,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -238,10 +246,12 @@ class __TwigTemplate_e63116e218abd38965aec8158483ee3b extends Template
 \t\t<link
 \t\trel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>\">
 \t\t{# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
-\t\t{% block stylesheets %} {{ encore_entry_link_tags('app') }}
+\t\t{% block stylesheets %}
+\t\t\t{{ encore_entry_link_tags('app') }}
 \t\t{% endblock %}
 
-\t\t{% block javascripts %} {{ encore_entry_script_tags('app') }}
+\t\t{% block javascripts %}
+\t\t\t{{ encore_entry_script_tags('app') }}
 \t\t{% endblock %}
 \t</head>
 \t<body>
@@ -252,6 +262,9 @@ class __TwigTemplate_e63116e218abd38965aec8158483ee3b extends Template
 \t\t\t\t{% if app.user %}
 \t\t\t\t\t<li>
 \t\t\t\t\t\t<a class=\"nav-link\" href=\"{{ path('app_sujets') }}\">Liste des sujets</a>
+\t\t\t\t\t</li>
+\t\t\t\t\t<li>
+\t\t\t\t\t\t<a class=\"nav-link\" href=\"{{ path('new_sujet') }}\">Ecrire un nouveau sujet</a>
 \t\t\t\t\t</li>
 \t\t\t\t\t<li>
 \t\t\t\t\t\t<a class=\"nav-link\" href=\"{{ path('app_logout') }}\">Déconnexion</a>
@@ -270,6 +283,6 @@ class __TwigTemplate_e63116e218abd38965aec8158483ee3b extends Template
 \t\t{% block body %}{% endblock %}
 \t</body>
 </html>
-", "base.html.twig", "C:\\Users\\Julien\\Documents\\Symfony\\forum\\templates\\base.html.twig");
+", "base.html.twig", "C:\\Users\\Julien BARON\\Documents\\forum_symfony\\templates\\base.html.twig");
     }
 }

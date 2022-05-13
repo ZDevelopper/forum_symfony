@@ -13,10 +13,13 @@ return [
         '/_profiler/search_bar' => [[['_route' => '_profiler_search_bar', '_controller' => 'web_profiler.controller.profiler::searchBarAction'], null, null, null, false, false, null]],
         '/_profiler/phpinfo' => [[['_route' => '_profiler_phpinfo', '_controller' => 'web_profiler.controller.profiler::phpinfoAction'], null, null, null, false, false, null]],
         '/_profiler/open' => [[['_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'], null, null, null, false, false, null]],
-        '/sujets' => [[['_route' => 'app_sujets', '_controller' => 'App\\Controller\\ListController::index'], null, null, null, false, false, null]],
+        '/list' => [[['_route' => 'app_sujets', '_controller' => 'App\\Controller\\ListController::index'], null, null, null, false, false, null]],
+        '/message' => [[['_route' => 'app_message', '_controller' => 'App\\Controller\\MessageController::index'], null, null, null, false, false, null]],
         '/inscription' => [[['_route' => 'app_inscription', '_controller' => 'App\\Controller\\RegistrationController::index'], null, null, null, false, false, null]],
         '/' => [[['_route' => 'app_login', '_controller' => 'App\\Controller\\SecurityController::login'], null, null, null, false, false, null]],
         '/logout' => [[['_route' => 'app_logout', '_controller' => 'App\\Controller\\SecurityController::logout'], null, null, null, false, false, null]],
+        '/new_sujet' => [[['_route' => 'new_sujet', '_controller' => 'App\\Controller\\SujetController::index'], null, null, null, false, false, null]],
+        '/sujets' => [[['_route' => 'show_sujets', '_controller' => 'App\\Controller\\SujetController::show'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'

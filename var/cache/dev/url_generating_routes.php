@@ -15,8 +15,11 @@ return [
     '_profiler_router' => [['token'], ['_controller' => 'web_profiler.controller.router::panelAction'], [], [['text', '/router'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
     '_profiler_exception' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::body'], [], [['text', '/exception'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::stylesheet'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
-    'app_sujets' => [[], ['_controller' => 'App\\Controller\\ListController::index'], [], [['text', '/sujets']], [], [], []],
+    'app_sujets' => [[], ['_controller' => 'App\\Controller\\ListController::index'], [], [['text', '/list']], [], [], []],
+    'app_message' => [[], ['_controller' => 'App\\Controller\\MessageController::index'], [], [['text', '/message']], [], [], []],
     'app_inscription' => [[], ['_controller' => 'App\\Controller\\RegistrationController::index'], [], [['text', '/inscription']], [], [], []],
     'app_login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/']], [], [], []],
     'app_logout' => [[], ['_controller' => 'App\\Controller\\SecurityController::logout'], [], [['text', '/logout']], [], [], []],
+    'new_sujet' => [[], ['_controller' => 'App\\Controller\\SujetController::index'], [], [['text', '/new_sujet']], [], [], []],
+    'show_sujets' => [[], ['_controller' => 'App\\Controller\\SujetController::show'], [], [['text', '/sujets']], [], [], []],
 ];
