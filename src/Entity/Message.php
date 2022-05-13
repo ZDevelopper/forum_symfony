@@ -23,6 +23,10 @@ class Message
     #[ORM\JoinColumn(nullable: false)]
     private $id_user;
 
+    #[ORM\ManyToOne(targetEntity: Sujet::class, inversedBy: 'messages')]
+    #[ORM\JoinColumn(nullable: false)]
+    private $id_sujet;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -60,6 +64,18 @@ class Message
     public function setIdUser(?User $id_user): self
     {
         $this->id_user = $id_user;
+
+        return $this;
+    }
+
+    public function getIdSujet(): ?Sujet
+    {
+        return $this->id_sujet;
+    }
+
+    public function setIdSujet(?Sujet $id_sujet): self
+    {
+        $this->id_sujet = $id_sujet;
 
         return $this;
     }

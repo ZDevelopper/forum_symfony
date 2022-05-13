@@ -70,7 +70,10 @@ class __TwigTemplate_e63116e218abd38965aec8158483ee3b extends Template
         echo "\t</head>
 \t<body>
 \t\t<nav class=\"navbar navbar-expand-lg navbar-light bg-light\" style=\"height:70px;\">
-\t\t\t<a class=\"navbar-brand\" href=\"#\">Forum</a>
+\t\t\t<a class=\"navbar-brand\" href=\"";
+        // line 23
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("show_sujets");
+        echo "\">Forum</a>
 \t\t\t<div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\"></div>
 \t\t\t<ul class=\"nav navbar-nav navbar-right d-flex\">
 \t\t\t\t";
@@ -80,7 +83,7 @@ class __TwigTemplate_e63116e218abd38965aec8158483ee3b extends Template
             echo "\t\t\t\t\t<li>
 \t\t\t\t\t\t<a class=\"nav-link\" href=\"";
             // line 28
-            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_sujets");
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("show_sujets");
             echo "\">Liste des sujets</a>
 \t\t\t\t\t</li>
 \t\t\t\t\t<li>
@@ -229,7 +232,7 @@ class __TwigTemplate_e63116e218abd38965aec8158483ee3b extends Template
 
     public function getDebugInfo()
     {
-        return array (  203 => 47,  190 => 18,  180 => 17,  167 => 14,  157 => 13,  137 => 6,  125 => 48,  123 => 47,  119 => 45,  113 => 42,  107 => 39,  104 => 38,  101 => 37,  95 => 34,  89 => 31,  83 => 28,  80 => 27,  78 => 26,  70 => 20,  68 => 17,  65 => 16,  62 => 13,  56 => 8,  54 => 6,  47 => 1,);
+        return array (  206 => 47,  193 => 18,  183 => 17,  170 => 14,  160 => 13,  140 => 6,  128 => 48,  126 => 47,  122 => 45,  116 => 42,  110 => 39,  107 => 38,  104 => 37,  98 => 34,  92 => 31,  86 => 28,  83 => 27,  81 => 26,  75 => 23,  70 => 20,  68 => 17,  65 => 16,  62 => 13,  56 => 8,  54 => 6,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -256,12 +259,12 @@ class __TwigTemplate_e63116e218abd38965aec8158483ee3b extends Template
 \t</head>
 \t<body>
 \t\t<nav class=\"navbar navbar-expand-lg navbar-light bg-light\" style=\"height:70px;\">
-\t\t\t<a class=\"navbar-brand\" href=\"#\">Forum</a>
+\t\t\t<a class=\"navbar-brand\" href=\"{{ path('show_sujets') }}\">Forum</a>
 \t\t\t<div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\"></div>
 \t\t\t<ul class=\"nav navbar-nav navbar-right d-flex\">
 \t\t\t\t{% if app.user %}
 \t\t\t\t\t<li>
-\t\t\t\t\t\t<a class=\"nav-link\" href=\"{{ path('app_sujets') }}\">Liste des sujets</a>
+\t\t\t\t\t\t<a class=\"nav-link\" href=\"{{ path('show_sujets') }}\">Liste des sujets</a>
 \t\t\t\t\t</li>
 \t\t\t\t\t<li>
 \t\t\t\t\t\t<a class=\"nav-link\" href=\"{{ path('new_sujet') }}\">Ecrire un nouveau sujet</a>
@@ -283,6 +286,6 @@ class __TwigTemplate_e63116e218abd38965aec8158483ee3b extends Template
 \t\t{% block body %}{% endblock %}
 \t</body>
 </html>
-", "base.html.twig", "C:\\Users\\Julien BARON\\Documents\\forum_symfony\\templates\\base.html.twig");
+", "base.html.twig", "C:\\Users\\Julien\\Documents\\Symfony\\forum\\templates\\base.html.twig");
     }
 }

@@ -20,12 +20,12 @@
 	</head>
 	<body>
 		<nav class="navbar navbar-expand-lg navbar-light bg-light" style="height:70px;">
-			<a class="navbar-brand" href="#">Forum</a>
+			<a class="navbar-brand" href="{{ path('show_sujets') }}">Forum</a>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
 			<ul class="nav navbar-nav navbar-right d-flex">
 				{% if app.user %}
 					<li>
-						<a class="nav-link" href="{{ path('app_sujets') }}">Liste des sujets</a>
+						<a class="nav-link" href="{{ path('show_sujets') }}">Liste des sujets</a>
 					</li>
 					<li>
 						<a class="nav-link" href="{{ path('new_sujet') }}">Ecrire un nouveau sujet</a>

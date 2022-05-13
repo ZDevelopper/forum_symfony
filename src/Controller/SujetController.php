@@ -5,6 +5,7 @@ namespace App\Controller;
 use DateTime;
 use App\Entity\Sujet;
 use App\Form\SujetType;
+use App\Repository\SujetRepository;
 use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -47,15 +48,12 @@ class SujetController extends AbstractController
         ]);
     }
     #[Route('/sujets', name: 'show_sujets')]
-    public function show(ManagerRegistry $doctrine): Response
+    public function show(SujetRepository $sujetRepository): Response
     {
         // Récupération de l'utilisateur connecté
         $user = $this->getUser();
         // Récupération des articles de l'utilisateur connecté
-        $sujets = $doctrine
-        ->getManager()
-        ->getRepository('Sujet::class')
-        ->findAll();
+        $sujets = $sujetRepository->findAll();
         return $this->render('sujet/show.html.twig', [
             'sujets' => $sujets,
         ]);
